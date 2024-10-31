@@ -3,16 +3,7 @@ name: "devbox-customization"
 tasks:
   - name: winget
     parameters:
-      package: Microsoft.VisualStudioCode
-  - name: winget
-    parameters:
       package: Postman.Postman
-  - name: winget
-    parameters:
-      package: Git.Git
-  - name: winget
-    parameters:
-      package: Microsoft.WindowsTerminal
   - name: winget
     parameters:
       package: Google.Chrome
@@ -24,13 +15,7 @@ tasks:
       package: GitHub.GitHubDesktop
   - name: winget
     parameters:
-      package: Docker.DockerDesktop
-  - name: winget
-    parameters:
       package: AgileBits.1Password
-  - name: winget
-    parameters:
-      package: Canonical.Ubuntu.2204
   - name: winget
     parameters:
       package: Microsoft.SQLServerManagementStudio
@@ -40,3 +25,9 @@ tasks:
   - name: winget
     parameters:
       package: Microsoft.AzureDataStudio
+  - name: winget
+    parameters:
+      package: Canonical.Ubuntu.2204
+  - name: winget
+    parameters:
+      package: Docker.DockerDesktop
