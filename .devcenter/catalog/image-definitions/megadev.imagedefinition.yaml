@@ -19,7 +19,7 @@ tasks:
     parameters:
       repositoryUrl: https://github.com/UKYITSDevOps/MegaDevBox.git
       directory: z:\workspaces
-      authentication:
+#      authentication:
 #        type: token
 #        token: $(AZURE_KEYVAULT_SECRET)
 
