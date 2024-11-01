@@ -20,8 +20,8 @@ tasks:
       repositoryUrl: https://github.com/UKYITSDevOps/MegaDevBox.git
       directory: z:\workspaces
       authentication:
-        type: token
-        token: $(AZURE_KEYVAULT_SECRET)
+#        type: token
+#        token: $(AZURE_KEYVAULT_SECRET)
 
   ### Run the DSC configuration for the backend engineering environment
   - name: winget
