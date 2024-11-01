@@ -14,6 +14,66 @@ properties:
         allowPrerelease: true
       settings:
        id: Postman.Postman
-
-
-       
+    ### Install Google Chrome
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: googlechrome
+      directives:
+        description: Install Google Chrome
+        allowPrerelease: true
+      settings:
+       id: Google.Chrome
+    ### Install Firefox
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: firefox
+      directives:
+        description: Install Firefox
+        allowPrerelease: true
+      settings:
+       id: Mozilla.Firefox
+    ### Install GitHub Desktop
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: githubdesktop
+      directives:
+        description: Install GitHub Desktop
+        allowPrerelease: true
+      settings:
+       id: GitHub.GitHubDesktop
+    ### Install 1Password
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: onepassword
+      directives:
+        description: Install 1Password
+        allowPrerelease: true
+      settings:
+       id: AgileBits.1Password
+    ### Install SQL Server Management Studio
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: sqlservermanagementstudio
+      directives:
+        description: Install SQL Server Management Studio
+        allowPrerelease: true
+      settings:
+       id: Microsoft.SQLServerManagementStudio
+    ### Install Azure Storage Explorer
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: azurestorageexplorer
+      directives:
+        description: Install Azure Storage Explorer
+        allowPrerelease: true
+      settings:
+       id: Microsoft.Azure.StorageExplorer
+    ### Install Azure Data Studio
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: azuredatastudio
+      directives:
+        description: Install Azure Data Studio
+        allowPrerelease: true
+      settings:
+       id: Microsoft.AzureDataStudio
