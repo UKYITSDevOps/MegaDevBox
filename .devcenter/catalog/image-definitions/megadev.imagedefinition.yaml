@@ -11,7 +11,7 @@ tasks:
   ### Run common DSC configurations for contoso engineering environments to create Dev Drive and install common tools
   - name: winget
     parameters:
-      downloadUrl: 'https://raw.githubusercontent.com/contoso-co/common-eng-sys/main/dsc-configurations/common-config.dsc.yaml'
+      downloadUrl: 'https://raw.githubusercontent.com/UKYITSDevOps/MegaDevBox/refs/heads/main/.configurations/common-cfg.dsc.yaml'
 
   ### Clone the DevBox repository into the Workspaces directory
   - name: git-clone
@@ -19,6 +19,10 @@ tasks:
     parameters:
       repositoryUrl: https://github.com/UKYITSDevOps/MegaDevBox.git
       directory: z:\workspaces
+      authentication:
+        type: token
+        token: $(AZURE_KEYVAULT_SECRET)
+
   ### Run the DSC configuration for the backend engineering environment
   - name: winget
     parameters:
