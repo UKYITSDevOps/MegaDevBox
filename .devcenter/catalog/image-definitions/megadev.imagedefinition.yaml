@@ -1,6 +1,6 @@
 $schema: "1.0"
-name: "backend-image"
-description: "This definition is for the eShop backend engineering environment"
+name: "megadev"
+description: "This definition is for mega development"
 
 image: "microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2"
 enableScheduledRefresh: true

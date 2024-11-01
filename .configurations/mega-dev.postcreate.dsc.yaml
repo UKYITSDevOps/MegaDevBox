@@ -77,3 +77,12 @@ properties:
         allowPrerelease: true
       settings:
        id: Microsoft.AzureDataStudio
+    ### Install Redis Insight
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: redisinsight
+      directives:
+        description: Install Redis Insight
+        allowPrerelease: true
+      settings:
+       id: Redis.RedisInsight
